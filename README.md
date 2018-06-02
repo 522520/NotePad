@@ -27,10 +27,8 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
  - 主界面
 
 	 - ![image](https://github.com/522520/NotePad/blob/master/images/yan.1.png)
-	-
-![image](https://github.com/522520/NotePad/blob/master/images/yan.3.png)
-	-
-![image](https://github.com/522520/NotePad/blob/master/images/yan.4.png)
+	 - ![image](https://github.com/522520/NotePad/blob/master/images/yan.3.png)
+	 - ![image](https://github.com/522520/NotePad/blob/master/images/yan.4.png)
 
 - 编辑笔记
 	- ![image](https://github.com/522520/NotePad/blob/master/images/yan.9.png)
