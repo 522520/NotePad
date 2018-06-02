@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_save"
+          android:icon="@drawable/save"
+          android:alphabeticShortcut='s'
+          android:title="@string/menu_save"
+          android:showAsAction="always" />
+    <item android:id="@+id/menu_revert"
+          android:icon="@drawable/ic_menu_revert"
+          android:title="@string/menu_revert" />
+    <item android:id="@+id/menu_delete"
+          android:icon="@drawable/delete"
+          android:title="@string/menu_delete"
+          android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/menu_fontSize"
+        android:icon="@drawable/delete"
+        android:title="@string/menu_fontSize"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/menu_color"
+          android:icon="@drawable/color"
+          android:title="Color"
+          android:showAsAction="always"/>
+    <item android:id="@+id/voice"
+        android:icon="@drawable/voice"
+        android:title="@string/menu_voice"
+        android:showAsAction="always">
+    </item>
+
+</menu>

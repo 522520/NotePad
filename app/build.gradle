@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.example.android.notepad"
+        minSdkVersion 11
+        targetSdkVersion 11
+        versionCode 1
+        versionName "1.0"
+        testApplicationId "com.example.android.notepad.tests"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            }
+        }
+        task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+            destinationDir file("$projectDir/libs")
+            baseName "Native_Libs2"
+            extension "jar"
+            from fileTree(dir: "libs", include: "armeabi/.so") into "lib"
+        }
+        tasks.withType(JavaCompile) {
+            compileTask -> compileTask.dependsOn(nativeLibsToJar)
+        }
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+    }
+
+
+dependencies {
+    compile fileTree(exclude: '*.bak', dir: 'libs')
+    compile files('libs/Baidu-SpeechRecognitionUI-SDK-Android-1.6.2.jar')
+    compile files('libs/VoiceRecognition-1.6.2.jar')
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingLeft="50dp">
+
+    <ImageButton
+        android:id="@+id/small"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/small"
+        android:onClick="small"
+        android:layout_marginRight="20dp"/>
+    <ImageButton
+        android:id="@+id/middle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/middle"
+        android:onClick="middle"
+        android:layout_marginRight="20dp"/>
+    <ImageButton
+        android:id="@+id/big"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/big"
+        android:onClick="big"/>
+
+</LinearLayout>
